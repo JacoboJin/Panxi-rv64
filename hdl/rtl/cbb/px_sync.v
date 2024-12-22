@@ -20,8 +20,13 @@ module px_sync #(
     input  wire [DATA_WIDTH-1:0]    data_in ,
     output reg  [DATA_WIDTH-1:0]    data_out
 );
+
+//========= PARAMETER DEFINE ==========//
+
+//========= SIGNAL DEFINE  ============//
     reg  [DATA_WIDTH-1:0]  sync_ff [SYNC_STAGE-1:0];
 
+//========= BEHAVIOR DEFINE ===========//
     genvar i;
     always @(posedge clk or negedge rst_n) begin
         if(!rst_n) begin

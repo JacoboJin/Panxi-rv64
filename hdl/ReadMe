@@ -1,0 +1,5 @@
+1. Module name must be capital.
+2. Every module must do reg-in and reg out.
+3. Use spaces for indentation not tab.
+4. Indent length is 4 spaces.
+5. Clock domain cross must sync.
